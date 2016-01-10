@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER Rajdeep Dua "dua_rajdeep@yahoo.com"
-RUN apt-get update -y
+RUN sudo apt-get update -y
+RUN sudo apt-get upgrade -y
 RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
 WORKDIR /app
