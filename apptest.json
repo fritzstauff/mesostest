@@ -12,7 +12,7 @@
     "type": "DOCKER",
     "volumes": [],
     "docker": {
-      "image": "emilevauge/whoami",
+      "image": "registry.stacklocity.net:5000/apps/whoami",
       "network": "BRIDGE",
       "portMappings": [
         {
