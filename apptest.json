@@ -1,27 +1,35 @@
 {
   "id": "/apptest",
   "cmd": null,
+  "cpus": 0,
   "disk": 0,
   "instances": 1,
   "ports": [
     0
   ],
+  "labels": {
+    "traefik.frontend.passHostHeader": "true"
+  },
   "container": {
-    "type": "DOCKER",
-    "volumes": [],
     "docker": {
-      "image": "registry.stacklocity.net:5000/apps/whoami",
       "network": "BRIDGE",
+      "image": "registry.stacklocity.net:5000/apps/devpi",
+      "forcePullImage": true,
       "portMappings": [
         {
-          "containerPort": 5000,
           "protocol": "tcp",
-          "labels": {}
+          "name": null,
+          "containerPort": 5000,
+          "hostPort": 0
         }
-      ],
-      "privileged": false,
-      "parameters": [],
-      "forcePullImage": true
-    }
-  }
+      ]
+    },
+    "type": "DOCKER",
+    "volumes": []
+  },
+  "env": {},
+  "healthChecks": [],
+  "uris": [
+    "file:///etc/docker.tar.gz"
+  ]
 }
