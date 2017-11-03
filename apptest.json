@@ -7,9 +7,6 @@
   "ports": [
     0
   ],
-  "labels": {
-    "traefik.frontend.passHostHeader": "true"
-  },
   "container": {
     "docker": {
       "network": "BRIDGE",
@@ -29,6 +26,9 @@
   },
   "env": {},
   "healthChecks": [],
+  "labels": {
+    "traefik.frontend.passHostHeader": "true"
+  },
   "uris": [
     "file:///etc/docker.tar.gz"
   ]
