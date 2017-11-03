@@ -2,7 +2,7 @@
   "id": "/apptest",
   "cmd": null,
   "disk": 0,
-  "instances": 2,
+  "instances": 1,
   "ports": [
     0
   ],
