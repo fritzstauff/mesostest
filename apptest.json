@@ -26,9 +26,6 @@
   },
   "env": {},
   "healthChecks": [],
-  "labels": {
-    "traefik.frontend.passHostHeader": "true"
-  },
   "uris": [
     "file:///etc/docker.tar.gz"
   ]
