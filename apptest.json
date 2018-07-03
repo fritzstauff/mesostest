@@ -27,8 +27,7 @@
   "env": {},
   "healthChecks": [],
   "labels": {
-    "traefik.backend.loadbalancer.stickiness": "true",
-    "traefik.backend.loadbalancer.stickiness.cookieName": "LB_TRAEFIK"
+    "traefik.backend.loadbalancer.sticky": "true",
   },
   "uris": [
     "file:///etc/docker.tar.gz"
