@@ -27,7 +27,7 @@
   "env": {},
   "healthChecks": [],
   "labels": {
-    "traefik.backend.loadbalancer.sticky": "true",
+    "traefik.backend.loadbalancer.sticky": "true"
   },
   "uris": [
     "file:///etc/docker.tar.gz"
