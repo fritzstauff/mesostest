@@ -3,7 +3,7 @@
   "cmd": null,
   "cpus": 0,
   "disk": 0,
-  "instances": 1,
+  "instances": 2,
   "ports": [
     0
   ],
@@ -27,6 +27,7 @@
   "env": {},
   "healthChecks": [],
   "labels": {
+    "traefik.backend.loadbalancer.stickiness": "true"
   },
   "uris": [
     "file:///etc/docker.tar.gz"
