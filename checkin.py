@@ -6,12 +6,11 @@ app = Flask(__name__)
 
 @app.route("/getip", methods=["GET"])
 def get_my_ip():
-  if request.headers.getlist("X-REAL-IP"):
-     ip = request.headers.getlist("X-REAL-IP")[1]
-     pprint(request.headers.getlist("X-REAL-IP"))
+  if request.headers.getlist("X-Forwarded-For"):
+     ip = request.headers.getlist("X-Forwarded-For")[0]
   else:
      ip = request.remote_addr
-  
+
   return jsonify({'ip': ip}), 200
 
 @app.route("/hostname/")
