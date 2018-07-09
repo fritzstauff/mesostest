@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/getip", methods=["GET"])
 def get_my_ip():
   if request.headers.getlist("X-Forwarded-For"):
-     ip = request.headers.getlist("X-Forwarded-For")[1]
+     ip = request.headers.getlist("X-Forwarded-For")[0]
   else:
      ip = request.remote_addr
 
