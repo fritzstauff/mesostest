@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/getip", methods=["GET"])
 def get_my_ip():
   if request.headers.getlist("X-REAL-IP"):
-     ip = request.headers.getlist("X-REAL-IP")[0]
+     ip = request.headers.getlist("X-REAL-IP")[1]
   else:
      ip = request.remote_addr
   
