@@ -8,6 +8,7 @@ app = Flask(__name__)
 def get_my_ip():
   if request.headers.getlist("X-REAL-IP"):
      ip = request.headers.getlist("X-REAL-IP")[1]
+     pprint(request.headers.getlist("X-REAL-IP"))
   else:
      ip = request.remote_addr
   
