@@ -16,7 +16,7 @@
         {
           "protocol": "tcp",
           "name": null,
-          "containerPort": 5000,
+          "containerPort": 80,
           "hostPort": 0
         }
       ]
