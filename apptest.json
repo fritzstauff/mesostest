@@ -1,5 +1,5 @@
 {
-  "id": "/apptest",
+  "id": "/apptest-1.0.0",
   "cmd": null,
   "cpus": 0,
   "disk": 0,
@@ -17,7 +17,10 @@
           "protocol": "tcp",
           "name": null,
           "containerPort": 80,
-          "hostPort": 0
+          "hostPort": 0,
+          "labels": {
+            "VIP_0": "/apptest-1.0.0:80"
+          }
         }
       ]
     },
@@ -27,7 +30,9 @@
   "env": {},
   "healthChecks": [],
   "labels": {
-    "traefik.backend.loadbalancer.sticky": "true"
+    "HAPROXY_0_MODE": "http",
+    "HAPROXY_0_VHOST": "whoami.stacklocity.net",
+    "HAPROXY_GROUP": "internal"
   },
   "uris": [
     "file:///etc/docker.tar.gz"
