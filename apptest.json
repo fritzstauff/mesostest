@@ -29,13 +29,12 @@
   },
   "env": {},
   "healthChecks": [{
-      "protocol": "HTTP",
-      "path": "/",
-      "portIndex": 0,
-      "timeoutSeconds": 10,
-      "gracePeriodSeconds": 10,
-      "intervalSeconds": 2,
-      "maxConsecutiveFailures": 10
+    "portIndex": 0,
+    "protocol": "TCP",
+    "gracePeriodSeconds": 300,
+    "intervalSeconds": 60,
+    "timeoutSeconds": 20,
+    "maxConsecutiveFailures": 0
   }],
   "labels": {
     "HAPROXY_0_MODE": "http",
