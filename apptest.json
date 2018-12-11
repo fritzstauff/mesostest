@@ -14,9 +14,14 @@
       "forcePullImage": true,
       "portMappings": [
         {
-          "hostPort": 0,
-          "containerPort": 80,
-          "servicePort": 10000
+           "containerPort": 80,
+           "hostPort": 0,
+           "labels": {
+              "VIP_0": "apptest:10000"
+           },
+           "protocol": "tcp",
+           "servicePort": 10000,
+           "name": "apptest"
         }
       ]
     },
