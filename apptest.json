@@ -37,8 +37,7 @@
     "maxConsecutiveFailures": 0
   }],
   "labels": {
-    "HAPROXY_0_MODE": "http",
-    "HAPROXY_GROUP": "internal"
+    "HAPROXY_GROUP": "external"
   },
   "uris": [
     "file:///etc/docker.tar.gz"
