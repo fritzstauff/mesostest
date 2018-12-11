@@ -7,6 +7,16 @@
   "ports": [
     0
   ],
+  "portDefinitions": [
+    {
+      "protocol": "tcp",
+      "port": 5555,
+      "labels": {
+        "VIP_0": "/apptest:5555"
+      },
+      "name": "apptest-vip"
+    }
+  ],
   "container": {
     "docker": {
       "network": "BRIDGE",
@@ -16,7 +26,7 @@
         {
           "hostPort": 0,
           "containerPort": 80,
-          "servicePort": 10001
+          "servicePort": 10000
         }
       ]
     },
