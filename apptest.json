@@ -25,7 +25,7 @@
          "name": "apptest"
       }
     ],
-    "type": "MESOS",
+    "type": "DOCKER",
     "volumes": []
   },
   "env": {},
