@@ -9,22 +9,21 @@
   ],
   "container": {
     "docker": {
-      "network": "BRIDGE",
       "image": "portus.stacklocity.net/hivelocity/whoami",
-      "forcePullImage": true,
-      "portMappings": [
-        {
-           "containerPort": 80,
-           "hostPort": 0,
-           "labels": {
-              "VIP_0": "apptest:10000"
-           },
-           "protocol": "tcp",
-           "servicePort": 10000,
-           "name": "apptest"
-        }
-      ]
+      "forcePullImage": true
     },
+    "portMappings": [
+      {
+         "containerPort": 80,
+         "hostPort": 0,
+         "labels": {
+            "VIP_0": "apptest:10000"
+         },
+         "protocol": "tcp",
+         "servicePort": 10000,
+         "name": "apptest"
+      }
+    ],
     "type": "MESOS",
     "volumes": []
   },
