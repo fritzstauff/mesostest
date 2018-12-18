@@ -1,5 +1,8 @@
 {
   "id": "apptest",
+  "acceptedResourceRoles":[
+      "slave_public"
+  ],
   "cmd": null,
   "cpus": 0.25,
   "disk": 0,
