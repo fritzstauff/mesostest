@@ -18,7 +18,6 @@
   ],
   "container": {
     "docker": {
-      "network": "BRIDGE",
       "image": "portus.stacklocity.net/hivelocity/whoami",
       "forcePullImage": true
     },
