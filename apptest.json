@@ -1,7 +1,6 @@
 {
   "id": "apptest",
   "acceptedResourceRoles": [
-    "*",
     "slave_public"
   ],
   "cmd": null,
@@ -24,7 +23,7 @@
     "portMappings": [
       {
          "containerPort": 80,
-         "hostPort": 0,
+         "hostPort": 12110,
          "labels": {
             "VIP_0": "apptest:10000"
          },
