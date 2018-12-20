@@ -2,7 +2,7 @@
   "id": "apptest",
   "acceptedResourceRoles": [
     "*",
-    "slave_public"
+    "marathon-user"
   ],
   "cmd": null,
   "cpus": 0.25,
