@@ -13,12 +13,12 @@
   ],
   "networks": [
     {
-      "name": "dcos",
-      "mode": "container"
+      "mode": "container/bridge"
     }
   ],
   "container": {
     "docker": {
+      "network": "BRIDGE",
       "image": "portus.stacklocity.net/hivelocity/whoami",
       "forcePullImage": true
     },
@@ -34,7 +34,7 @@
          "name": "apptest"
       }
     ],
-    "type": "MESOS",
+    "type": "DOCKER",
     "volumes": []
   },
   "env": {},
