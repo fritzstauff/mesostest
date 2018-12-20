@@ -1,5 +1,9 @@
 {
   "id": "apptest",
+  "acceptedResourceRoles": [
+    "*",
+    "slave_public"
+  ],
   "cmd": null,
   "cpus": 0.25,
   "disk": 0,
@@ -38,7 +42,13 @@
     "maxConsecutiveFailures": 0
   }],
   "labels": {
-    "HAPROXY_GROUP": "external"
+    "HAPROXY_DEPLOYMENT_GROUP": "apptest",
+    "HAPROXY_GROUP": "external",
+    "HAPROXY_DEPLOYMENT_COLOUR": "green",
+    "HAPROXY_DEPLOYMENT_TARGET_INSTANCES": "20",
+    "HAPROXY_DEPLOYMENT_ALT_PORT": "10001",
+    "HAPROXY_0_PORT": "10000",
+    "HAPROXY_APP_ID": "apptest"
   },
   "uris": [
     "file:///etc/docker.tar.gz"
