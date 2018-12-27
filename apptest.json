@@ -51,7 +51,6 @@
     "HAPROXY_DEPLOYMENT_GROUP": "apptest",
     "HAPROXY_0_GROUP": "external",
     "HAPROXY_DEPLOYMENT_ALT_PORT": "10001",
-    "HAPROXY_0_PORT": "10000",
     "HAPROXY_APP_ID": "apptest",
     "HAPROXY_0_ENABLED": "true"
   },
