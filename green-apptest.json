@@ -46,6 +46,7 @@
   }],
   "labels": {
     "HAPROXY_DEPLOYMENT_COLOUR":"green",
+    "HAPROXY_DEPLOYMENT_TARGET_INSTANCES": 2,
     "HAPROXY_0_PORT":"10000",
     "HAPROXY_DEPLOYMENT_GROUP": "apptest",
     "HAPROXY_0_GROUP": "external",
