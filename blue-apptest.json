@@ -53,6 +53,7 @@
     "HAPROXY_APP_ID": "apptest",
     "HAPROXY_0_ENABLED": "true",
     "HAPROXY_0_USE_HSTS": "true",
+    "HAPROXY_DEPLOYMENT_TARGET_INSTANCES": 2,
     "HAPROXY_0_REDIRECT_TO_HTTPS": "true",
     "HAPROXY_0_BACKEND_HTTP_OPTIONS": "  option httplog\n  option forwardfor\n  http-request set-header X-Forwarded-Port %[dst_port]\n  http-request add-header X-Forwarded-Proto https if { ssl_fc }\n",
     "HAPROXY_0_VHOST": "whoami.stacklocity.net"
