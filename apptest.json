@@ -17,7 +17,7 @@
   ],
   "container": {
     "docker": {
-      "image": "portus.stacklocity.net/hivelocity/whoami",
+      "image": "harbor.stacklocity.net/hivelocity/whoami",
       "forcePullImage": true
     },
     "portMappings": [
@@ -55,6 +55,6 @@
     "HAPROXY_0_ENABLED": "true"
   },
   "uris": [
-    "file:///etc/docker.tar.gz"
+    "file:///etc/harbor.tar.gz"
   ]
 }
