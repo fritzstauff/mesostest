@@ -10,7 +10,7 @@
   "container": {
     "docker": {
       "network": "BRIDGE",
-      "image": "harbor.stacklocity.net:5000/hivelocity/whoami",
+      "image": "registry.stacklocity.net:5000/hivelocity/whoami",
       "forcePullImage": true,
       "portMappings": [
         {
