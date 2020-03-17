@@ -10,7 +10,7 @@
   "container": {
     "docker": {
       "network": "BRIDGE",
-      "image": "registry.stacklocity.net:5000/hivelocity/whoami",
+      "image": "registry.stacklocity.net:5000/apps/whoami",
       "forcePullImage": true,
       "portMappings": [
         {
@@ -30,6 +30,6 @@
     "traefik.backend.loadbalancer.sticky": "true"
   },
   "uris": [
-    "file:///etc/docker.tar.gz"
+    "file:///etc/harbor.tar.gz"
   ]
 }
